@@ -227,7 +227,7 @@ nên sẽ mạnh về khoảng duyệt mọi kí tự trong chuỗi hơn còn wh
         cout << s << " ";               ==> Viết ngược mảng 
     }
 ======================================================================================================================================================================================================================================================================================================
-23)                                       Max, Min, Count, Find, Distance 
+23)                                       Max, Min, Count, Find, Distance Trong Container Như Vector
 
 vector<int> a = {1,2,3,4,5,2,2,3,4,4,4};
 
@@ -247,37 +247,36 @@ int index = distance(a.begin(), it);
 int a = count(v.begin(), v.end(), 2);      // Dùng được ở mọi thứ có iterator          
 
 
- Lí Thuyết:
-*it chỉ để biểu diễn giá trị
-it là vị trí của iterator tại đó, sài cho mọi trường hợp trừ xuất giá trị 
-a.begin()/ a.end() cũng là một loại con trỏ nên it mới có thể so sánh với chúng 
+Lí Thuyết:
+_ *it chỉ để biểu diễn giá trị
+_ it là vị trí của iterator tại đó, sài cho mọi trường hợp trừ xuất giá trị 
+_ a.begin()/ a.end() cũng là một loại con trỏ nên it mới có thể so sánh với chúng 
 ======================================================================================================================================================================================================================================================================================================
 24) Xóa phần tử của String 
                                                       Substr/ Erase 
-substr  ( LẤY )
-s.substr(n)        :  Lấy từ n đến hết chuỗi
-s.substr(index, n) :  Lấy n phần tử từ index
-
 insert ( Chèn )
-s.insert(it, "abc")       : Chèn chuỗi phía trước iterator
-s.insert(index, "abc")    : Chèn chuỗi phía sau vị trí index ( Vị trí thực )
-s.insert(it, n, 'a')      : Chèn n kí tự 'a' phía trước iterator
+s.insert(it, n, 'a')     : Chèn n ký tự 'a' TRƯỚC iterator it
+s.insert(pos, "abc")     : Chèn "abc" vào trước kí tự pos  
 
 erase   ( XÓA )
-s.erase(n)         :  Xóa từ n đến hết
-s.erase(index, n)  :  Xóa từ index n phần tử 
+s.erase(pos)          : Xóa từ pos đến hết chuỗi tính luôn cả pos
+s.erase(pos, len)     : Xóa len ký tự từ pos tính luôn cả pos 
+s.erase(it)           : Xóa phần tử iterator it trỏ tới 
+s.erase(it1, it2)     : Xóa toàn bộ đoạn [it1, it2)
 
-replace ( Thay thế )                                // Replace chỉ áp dụng cho string
-s.replace(itbegin, itend, "abc")  : Thay thế chuỗi "abc" vào đoạn từ itbegin đến itend
-s.replace(pos, len, "abc")        : Từ vị trí pos xóa len kí tựu rồi chèn "abc" vào thay thế
+substr  ( LẤY )
+s.substr(pos)        : Lấy từ pos đến hết chuỗi  
+s.substr(pos, len)   : Lấy len ký tự từ pos
+
+replace (THAY THẾ)                 
+s.replace(pos, len, "abc")         : Xóa len ký tự tại pos rồi chèn "abc"
+s.replace(it1, it2, "abc")         : Thay đoạn [it1, it2) bằng "abc"
+
 
 
 LƯU Ý: 
-Substr():  Chỉ có tác dụng đối với chuỗi
-Erase():   Còn có thể sử dụng ở các Container ( vector, deque, list ).
-Insert():  Áp dụng được cho cả string và vector
-Replace(): Chỉ sài được trên string 
-
+String dùng được : insert, erase, substr, replae 
+Container dùng được : insert, erase 
 ======================================================================================================================================================================================================================================================================================================
                                                 Vector
 | Hàm thành viên          | Mục đích                                          | Ví dụ ngắn                                 |

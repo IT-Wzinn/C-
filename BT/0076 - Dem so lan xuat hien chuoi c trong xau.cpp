@@ -1,16 +1,15 @@
-#include<iostream>
-#include<algorithm>
+#include <bits/stdc++.h>
 using namespace std;
 int main(){
-    string x,s = "Hello";
-    getline(cin,x);
-      
+    string s,x;
+    getline(cin, s);
+    getline(cin, x);
+
     size_t pos = 0;
     int count = 0;
-
-    while(( pos = s.find(x,pos)) != string::npos){
-         count++;
-         pos += 1;      // Hoặc nếu không muốn tính trùng thì pos += x.size;
+    while( (pos = s.find(x, pos)) != string::npos ){
+        count++;
+        pos += x.size();
     }
-        cout << count;
-}
+    cout << count;
+}   
