@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-// ===== Lớp CHA =====
 class Person {
     
 protected:              // Protected: Lớp con truy cập được
@@ -24,7 +23,6 @@ public:
    
 };
 
-// ===== Lớp CON kế thừa từ Person =====
 class Student : public Person {
 
 };
