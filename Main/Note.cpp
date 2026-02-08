@@ -80,7 +80,7 @@ cin >> a;
 cin.ignore();
 getline(cin, a);
 
-==> Nếu sau cin có getline() thì cần đặt cin.ignore(); ở giữa để xóa khoảng còn thừa của cin để tránh getline(); đọc dấu cách đó  
+==> Nếu sau cin có getline() thì cần đặt cin.ignore(); ở giữa để xóa khoảng còn thừa của cin để tránh getline() đọc dấu cách đó  
 ======================================================================================================================================================================================================================================================================================================
 10) Ước chung lớn nhất và Bội chung nhỏ nhất
 
@@ -238,14 +238,15 @@ auto it = max_element(a.begin(), a.end());
 auto it = min_element(a.begin(), a.end());                
 
 3) Trỏ it đến phần tử mình muốn tìm 
-auto it = find(a.begin(), a.end(), 2);      // Trỏ it lại phần tử đó
+auto it = find(a.begin(), a.end(), 2);      
 
-4) Vị trí của phần tử mình muốn tìm.
+                                       Vị trí và số lượng phần tử trong Container
+
+1) Vị trí của phần tử mình muốn tìm.
 int index = distance(a.begin(), it);                        
 
-5) Đếm số lượng của phần tử mình muốn biết trong Container xem nó có số lượng bao nhiêu.
-int a = count(v.begin(), v.end(), 2);      // Dùng được ở mọi thứ có iterator          
-
+2) Đếm số lượng của phần tử mình muốn biết trong Container xem nó có số lượng bao nhiêu.
+int a = count(v.begin(), v.end(), 2);
 
 Lí Thuyết:
 _ *it chỉ để biểu diễn giá trị
@@ -708,6 +709,3 @@ a->first() : a là con trỏ
 
 Hàm(a...) : Hàm cần tham số truyền vào 
 ======================================================================================================================================================================================================================================================================================================
-
-
-

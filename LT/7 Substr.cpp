@@ -31,13 +31,13 @@ int main(){
 
 // Chú thích
 substr  ( LẤY )
-s.substr(n)        :  Lấy từ n đến hết chuỗi
-s.substr(index, n) :  Lấy n phần tử từ index
+s.substr(n)        :  Lấy từ vị trí n đến hết chuỗi
+s.substr(index, n) :  Lấy n phần tử từ vị trí index
 
 erase   ( XÓA )
-s.erase(n)         :  Xóa từ n đến hết
-s.erase(index, n)  :  Xóa từ index n phần tử 
-
+s.erase(n)         :  Xóa từ vị trí n đến hết
+s.erase(index, n)  :  Xóa từ vị trí index n phần tử 
+  
 a.insert(pos, "xyz"): Thêm xyz vào mảng a.
 a.replace(pos, len, "xyz") : Thay thế chuỗi từ vị trí pos độ dài len của chỗi a bằng chuỗi "xyz".
 

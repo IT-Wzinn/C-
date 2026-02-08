@@ -21,7 +21,7 @@ int main(){
 
 
 // Tìm nhiều lần
-    while( (pos = line.find(x,pos)) != string:npos){
+    while( (pos = line.find(x,pos)) != string::npos ){
          count++;
          pos++;
     }

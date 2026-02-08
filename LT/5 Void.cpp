@@ -11,7 +11,7 @@ void Tinhtong(int a, int b) {
     cout << "Tổng của " << a << " và " << b << " là: " << a + b << endl;
 }
 
-// Hàm void truyền tham chiếu (tham khảo địa chỉ)
+// Hàm void truyền tham chiếu 
 void Tanglen10(int &x) {
     x++;  // Tăng biến tại địa chỉ thực
 }

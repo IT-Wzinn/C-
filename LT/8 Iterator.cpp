@@ -23,7 +23,7 @@ int main(){
 vector<int> a = {1,2,3,4,5,2,2,3,4,4,4};
 
 1) Phần tử lớn nhất trong Container.
-auto it = max_element(a.begin(), a.end());               // #include <algorithm>
+auto it = max_element(a.begin(), a.end());                
 
 2) Phần tử nhỏ nhất trong Container.
 auto it = min_element(a.begin(), a.end());                
@@ -31,8 +31,11 @@ auto it = min_element(a.begin(), a.end());
 3) Trỏ it đến phần tử mình muốn tìm 
 auto it = find(a.begin(), a.end(), 2);         
 
-4) Vị trí của phần tử mình muốn tìm.
+
+                                Vị trí và số lượng phần tử trong Container
+
+1) Vị trí của phần tử mình muốn tìm.
 int index = distance(a.begin(), it);                        
 
-5) Đếm số lượng của phần tử mình muốn biết trong Container xem nó có số lượng bao nhiêu.
-int a = count(v.begin(), v.end(), 2);                    // #include <algorithm>
+2) Đếm số lượng của phần tử mình muốn biết trong Container xem nó có số lượng bao nhiêu.
+int a = count(v.begin(), v.end(), 2);                    

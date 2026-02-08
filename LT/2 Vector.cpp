@@ -35,8 +35,8 @@ s.erase(n)         :  Xóa từ n đến hết
 s.erase(index, n)  :  Xóa từ index n phần tử 
 
 ** LƯU Ý: 
-Substr(): Chỉ có tác dụng đối với chuỗi
-Erase():  Còn có thể sử dụng ở các Container ( vector, deque, list ).
+Substr(): Chỉ có tác dụng đối với chuỗi ( string )
+Erase():  Còn có thể sử dụng ở các Container khác ( vector, deque, list ).
 
 
 vector

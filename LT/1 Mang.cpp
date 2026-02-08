@@ -39,5 +39,5 @@ for(int i = 0; i < 2; i++){
 }
                           Cách duyệt mảng 2 chiều mà không cần tự ghi kích thước của mảng ( 2 )
 
-int row = sizeof(mang2chieu) / sizeof(mang2chieu[0]);         // Số hàng = Kích thước toàn mảng / Kích thước của 1 hàng
+int row = sizeof(mang2chieu) / sizeof(mang2chieu[0]);            // Số hàng = Kích thước toàn mảng / Kích thước của 1 hàng
 int colum = sizeof(mang2chieu[0]) / sizeof(mang2chieu[0][0]);   // Số Cột  = Kích thước của 1 hàng / Kích thước 1 phần tử nằm trong hàng

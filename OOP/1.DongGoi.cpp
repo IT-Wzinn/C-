@@ -6,22 +6,28 @@ private:
     int salary;         
 
 public:
-    void Setsalary();
-    void Getsalary();
+    void Setsalary(int x);
+    int Getsalary() const;
 };
 
-void Nhanvien::Setsalary(){
-    cin >> salary;
+void Nhanvien::Setsalary(int x){
+     if(x <= 0) cout << "Lương không hợp lệ";
+     else salary = x;
 }
 
-void Nhanvien::Getsalary(){
-    cout << "Lương của nhân viên là: " << salary;
+int Nhanvien::Getsalary() const{
+     return salary;
 }
 
 int main(){
-    Nhanvien a;     
-    a.Setsalary();            
-    a.Getsalary();           
+    int x;
+    cout << "Nhập lương: ";
+    cin >> x;
+    
+    Nhanvien a;
+    a.Setsalary(x);
+
+    cout << "Lương của nhân viên là: " << a.Getsalary();
 }
 
 
