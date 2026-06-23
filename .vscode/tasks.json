@@ -1,33 +1,16 @@
 {
     "version": "2.0.0",
-    "tasks": [
-        {
-            "label": "build active file",
-            "type": "shell",
-            "command": "g++",
-            "args": [
-                "${file}",
-                "-o",
-                "C:\\Users\\ASUS\\C++\\BT\\.exe\\${fileBasenameNoExtension}.exe"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": false
-            },
-            "problemMatcher": [
-                "$gcc"
-            ]
-        },
+    "tasks":[
         {
             "type": "cppbuild",
             "label": "C/C++: g++.exe build active file",
             "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
-            "args": [
+            "args":[
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${workspaceFolder}\\Basic\\.exe\\${fileBasenameNoExtension}.exe"
             ],
             "options": {
                 "cwd": "${fileDirname}"

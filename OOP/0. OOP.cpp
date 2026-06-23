@@ -1,51 +1,84 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 class Sinhvien{
+
+// 1. Private data
 private:
     string name;
-    int age;
 
 public:
-    void Nhap(){
-        cout << "Nhập tên: ";
-        getline(cin, name);
-        
-        cout << "Nhập tuổi: ";
-        cin >> age;
-    };
+
+// 2. Constructor
+    Sinhvien() : name("Unknown") {}
+    Sinhvien(const string &n) : name(n) {}
+
+// 3. Getter / Setter
+    void Setname(const string &n){
+    name = n;
+    }
     
-    void In() const{
-        cout << "Tên của sinh viên là: " << name << endl;
-        cout << "Tuổi của sinh viên là: " << age << endl << endl;
-    };
+    const string &Getname() const{
+        return name;
+    }
 
+// 4. Logic method
+    void ChuanhoaTen(){
 
-    Sinhvien(){};                                                // Constructor mặc định 
-    Sinhvien(string x, int y) : name(x), age(y) {};             //  Initializer list 
+        stringstream ss(name);
+        string word;
+        string result = "";
+
+        while(ss >> word){
+
+            word[0] = toupper(word[0]);
+
+            for(int i = 1; i < word.size(); i++)
+                word[i] = tolower(word[i]);
+
+            result += word + " ";
+        }
+
+        if(!result.empty())
+            result.pop_back();
+
+        name = result;
+    }
+
+// 5. UI
+    void Nhap(){
+        string temp;
+
+        cout << "Hãy nhập tên: ";
+        getline(cin >> ws, temp);
+
+        Setname(temp);
+    }
+
+    void Xuat() const{
+        cout << endl << "Kết quả: ";
+        cout << Getname() << endl;
+    }
+
 };
 
 int main(){
     Sinhvien a;
     a.Nhap();
-    a.In();
-
-    Sinhvien b("Quốc Vinh", 20);
-    b.In();
+    a.ChuanhoaTen();   // logic xử lý dữ liệu
+    a.Xuat();
 }
 
-/*                                                 OOP
 
-_ Class chỉ để giữ giữ liệu và logic còn cin, cout thì làm ở hàm main để cho Logic và UI tách riêng để sau này dễ mở rộng
-_ Nếu đối tượng là const thì chỉ gọi được hàm cũng là const 
-_ Hàm khởi tạo nên tạo theo kiểu Initializer list: Sinhvien(string x, int y) : name(x), age(y) {}
-_ Initializer list được dùng để khởi tạo giá trị ban đầu của thuộc tính ngay sau khi tạo đối tượng, nếu có thuộc tính const/ & 
-  thì bắt buột phải dùng Initializer list vì 2 cái đó không được NULL
+/*
+void Setname(const string &n): Truy cập trực tiếp và không cho thay đổi tham số truyền vào 
+const string &Getname() const{}: Const đầu không cho sửa dữ liệu trả về, Const sau không cho thay đổi thuộc tính của oject
 
-_ Destructer: Tự động chạy khi object kết thúc vòng đời
-
-~Sinhvien() {
-   
-}
+Thứ tự của một Class:
+1. private data
+2. constructor / destructor
+3. getter / setter
+4. các method xử lý logic
+5. các hàm UI ( Hiển thị nhập xuất)
 
 */

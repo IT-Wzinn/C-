@@ -1,1 +1,0 @@
-{"name":"Local: Brute Force","url":"c:\\Users\\ASUS\\C++\\Main\\Brute Force.cpp","tests":[{"id":1762946507138,"input":"4 5\n2 1 3 2\n12 10 20 15","output":"Giá trị lớn nhất là: 37\nChọn các món: 1 2 4 "}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\ASUS\\C++\\Main\\Brute Force.cpp","group":"local","local":true}

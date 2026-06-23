@@ -1,7 +1,7 @@
 {
     "editor.formatOnSave": false,
     "files.autoSave": "onFocusChange",
-    "C_Cpp.default.compilerPath": "C:/MinGW/bin/g++.exe",
+    "C_Cpp.default.compilerPath": "C:\\msys64\\ucrt64\\bin\\g++.exe",
     "C_Cpp.default.configurationProvider": "ms-vscode.cpptools",
     "files.associations": {
         "*.h": "cpp",
@@ -15,5 +15,10 @@
         "xstring": "cpp",
         "cmath": "cpp",
         "algorithm": "cpp"
-    }
+    },
+    "code-runner.executorMap": {
+        "cpp": "chcp 65001 >nul && cd $dir && g++ $fileName -o $workspaceRoot\\Basic\\.exe\\$fileNameWithoutExt.exe && $workspaceRoot\\Basic\\.exe\\$fileNameWithoutExt.exe"
+    },
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.runInTerminal": true
 }
