@@ -24,6 +24,8 @@
 
 This repository documents a progressive self-study path through C++ — starting from core syntax and the Standard Template Library, moving through the four pillars of Object-Oriented Programming, and finishing with fundamental Data Structures and Algorithms. Each file is a focused exercise or reference note, written to solidify understanding rather than just compile cleanly. If you are a developer looking to revisit C++ fundamentals or build a solid foundation from scratch, this repo doubles as a practical study guide.
 
+![c.png](cpp/.exe/c.png)
+
 ---
 
 ## Repository Structure
