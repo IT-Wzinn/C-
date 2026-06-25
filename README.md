@@ -3,7 +3,7 @@
 <div align="center">
   <img src="cpp/.exe/c.png" alt="C++ Learning" width="750px" />
 
-  # ⚡ C++ Learning Repository
+  # 🌏 C++ Learning Repository
 
   *From fundamentals to advanced data structures — a structured self-study journey in C++.*
 
