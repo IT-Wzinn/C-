@@ -1,10 +1,26 @@
+<br/>
+
+<div align="center">
+  <img src="cpp/.exe/c.png" alt="C++ Learning" width="750px" />
+
+  # ⚡ C++ Learning Repository
+
+  *From fundamentals to advanced data structures — a structured self-study journey in C++.*
+
+  <br/>
+
+  ![C++](https://img.shields.io/badge/C%2B%2B-17-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+  ![STL](https://img.shields.io/badge/STL-Standard%20Template%20Library-blue?style=flat-square)
+  ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
+  ![Status](https://img.shields.io/badge/Status-In%20Progress-orange?style=flat-square)
+  ![Stars](https://img.shields.io/github/stars/?style=flat-square&color=yellow)
+</div>
+
 ---
 
 ## 📖 Introduction
 
 This repository documents a progressive self-study path through C++ — starting from core syntax and the Standard Template Library, moving through the four pillars of Object-Oriented Programming, and finishing with fundamental Data Structures and Algorithms. Each file is a focused exercise or reference note, written to solidify understanding rather than just compile cleanly. If you are a developer looking to revisit C++ fundamentals or build a solid foundation from scratch, this repo doubles as a practical study guide.
-
-![c.png](cpp/.exe/c.png)
 
 ---
 # 🚀 C++ Learning Journey
@@ -66,6 +82,17 @@ C++/
     ├── 5. Trees.cpp
     └── 6. Graphs.cpp
 ```
+
+---
+## 🎥 Video Tutorial
+
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=-TkoO8Z07hI" target="_blank">
+    <img src="cpp/.exe/thumbnail.png" alt="Watch the C++ Tutorial" width="700px" style="border-radius: 8px;" />
+  </a>
+  <br/>
+  <em>▶ Click to watch the full C++ tutorial on YouTube</em>
+</div>
 
 ---
 
