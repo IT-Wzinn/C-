@@ -179,6 +179,6 @@ g++ -std=c++17 -o output "DSA/5. Trees.cpp"
 
 ---
 
-<p align="center">
-  Built one file at a time — learning in public.
-</p>
+<div align="center">
+  <sub>Built with ❤️ as part of a self-study journey toward AI Engineering.</sub>
+</div>
